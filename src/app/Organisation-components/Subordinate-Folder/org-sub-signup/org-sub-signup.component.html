@@ -1,0 +1,139 @@
+<p>
+    <mat-toolbar color="primary" style="background-color:#032646">
+      <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button> -->
+      <span routerLink="common-page">Home</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+  
+      </mat-toolbar>
+  
+    
+  </p>
+  
+  
+  <mat-card class="colorcheck mx-auto d-table h-100">
+    <mat-card-content>
+      <div class="signupCard">
+        <div>
+          <img src="https://cdni.iconscout.com/illustration/premium/thumb/sign-up-4922762-4097209.png">
+        </div>
+        <div>
+          <div class="text-center mt-4">
+            <h1 class="h2" style="color: aliceblue; font-size: x-large;
+          padding-bottom: 0.5rem;    margin-right: 4rem;">Sign Up</h1>
+          </div>
+  
+          <form [formGroup]="signUp" (ngSubmit)="onSubmit()">
+            <div class="col1">
+              <div class="mb-3">
+                <mat-form-field appearance='outline'>
+                  <mat-label>Admin Name</mat-label>
+                  <input matInput class="form-control form-control-lg" formControlName="name" type="text" name="name"
+                    placeholder="Enter your name" required />
+  
+                  <mat-error *ngIf="signUp.get('name').hasError('required')">
+                    Admin name is required
+                  </mat-error>
+                </mat-form-field>
+              </div>
+  
+              <div class="mb-3">
+                <mat-form-field appearance='outline'>
+                  <mat-label>Username</mat-label>
+                  <input matInput class="form-control form-control-lg" formControlName="username" type="text"
+                    name="username" placeholder="Enter your username" required />
+  
+                  <mat-error *ngIf="
+                  signUp.get('username').hasError('required') ||
+                  signUp.get('username').hasError('pattern')
+                ">
+                    Username must be alphanumeric
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+  
+            <div class="col1">
+              <div class="mb-3">
+                <mat-form-field appearance='outline'>
+                  <mat-label>Email</mat-label>
+                  <input matInput class="form-control form-control-lg" formControlName="email" type="email" name="email"
+                    placeholder="Enter your email" required />
+  
+                  <mat-error *ngIf="signUp.get('email').hasError('required') || signUp.get('email').hasError('email')">
+                    Enter a valid email address
+                  </mat-error>
+                </mat-form-field>
+              </div>
+  
+              <div class="mb-3">
+                <mat-form-field appearance='outline'>
+                  <mat-label>Phone</mat-label>
+                  <input matInput class="form-control form-control-lg" formControlName="phone" type="phone" name="phone"
+                    placeholder="Enter your phone number" required />
+  
+                  <mat-error *ngIf="signUp.get('phone').hasError('required') || signUp.get('phone').hasError('pattern')">
+                    Enter a valid 10-digit phone number
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="col1">
+              <div class="mb-3">
+                <mat-form-field appearance='outline'>
+                  <mat-label>Create Password</mat-label>
+                  <input matInput class="form-control form-control-lg" formControlName="password" type="password"
+                    name="password" placeholder="Create password" required />
+  
+                  <mat-error
+                    *ngIf="signUp.get('password').hasError('required') || signUp.get('password').hasError('minlength')">
+                    Password must be at least 8 characters long
+                  </mat-error>
+                </mat-form-field>
+              </div>
+  
+              <div class="mb-3">
+                <mat-form-field appearance='outline'>
+                  <mat-label>Confirm Password</mat-label>
+                  <input matInput class="form-control form-control-lg" formControlName="confPassword" type="password"
+                    name="confPassword" placeholder="Confirm password" required />
+                  <mat-error
+                    *ngIf="signUp.get('confPassword').hasError('required') || signUp.get('confPassword').hasError('mismatch')">
+                    Passwords do not match
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <!-- <div class="googleauth"> <asl-google-signin-button  type='icon' size='large'></asl-google-signin-button></div> -->
+  
+            <div class=" button d-grid gap-2 mt-3">
+              <button type="submit" mat-raised-button color="primary" [disabled]="signUp.invalid">Sign Up</button>
+            </div>
+          </form>
+          <div style="display: flex;color: black;font-weight: bold; margin-left:8.2rem;">
+            <hr>
+            <p style="padding-top: .4rem;"> Or </p>
+            <hr>
+          </div>
+  
+          <!-- <div class="googleauth" >
+            <asl-google-signin-button type='icon' size='large'></asl-google-signin-button>
+          </div> -->
+          <!-- <button (click)="googleSignUp()">Google</button> -->
+          <!-- <button (click)="loginWithGoogle()" mat-raised-button class="google-login-btn">
+            Google
+          </button>   -->
+          <div class="logInText text-center mb-3">
+            Already have account? <a routerLink="/subordinate-portal/sub-sigin">Log In</a>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>

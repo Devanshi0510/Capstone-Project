@@ -1,0 +1,37 @@
+<div class=""></div>
+
+<div class="projcard-container">
+    
+    <div class="projcard projcard-blue">
+      <div class="projcard-innerbox">
+        <img class="projcard-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKHkpU3t6-KounsVVKZaLeqcUy6aOYvxpnBQ&usqp=CAU" />
+        <div class="projcard-textbox">
+          <div class="projcard-title" style="padding: 1px;">{{data.name}}</div>
+          <div class="projcard-subtitle" style="padding: 3px;">Email Id: {{data.email}}</div>
+          <div class="projcard-subtitle"style="padding: 3px;">Phone: {{data.phone}}</div>
+          <div class="projcard-bar"></div>
+          <div class="projcard-subtitle" style="padding: 3px;color: red;">Status: {{data.injuries.status}}</div>
+          <div class="projcard-subtitle" style="padding: 3px;color: green;">Help: {{data.injuries.help}}</div>
+          <div class="projcard-description" style="padding: 1px;">Severity:   {{data.injuries.severity}}</div>
+          <div class="projcard-description" style="padding: 1px;">Date:   {{data.injuries.injuryDate}}</div>
+          <div class="projcard-description" style="padding: 1px;">Description:   {{data.injuries.description}}</div>
+          <div class="projcard-description" style="padding: 1px;">Location:   {{data.injuries.location}}</div>
+      
+          <!-- <div id="map" style="height: 400px; width: 100%;"></div> -->
+          <button class="button-86" role="button" (click)="SendHelp()">Send Help</button>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+  <div class="map-container">
+    <div class="map-frame">
+      <div id="map"></div>
+    </div>
+  </div>
+
+
+  

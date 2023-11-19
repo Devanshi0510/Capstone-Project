@@ -1,0 +1,66 @@
+
+<p>
+    <mat-toolbar color="primary" style="background-color:#032646">
+      <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button> -->
+      <span routerLink="common-page">Home</span>
+      <span class="example-spacer" ></span>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" style="padding-left: 68rem;">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </p>
+
+
+<mat-card class="colorcheck mx-auto d-table h-100">
+    <mat-card-content>
+        <div class="signupCard">
+            <div>
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/sign-up-4922762-4097209.png">
+        </div>
+        <div>
+          <div  style="padding-top: 5rem;">
+      <div class="text-center mt-4" >
+        <h1 class="h2" style="color: aliceblue; font-size: x-large;
+        padding-bottom: 0.5rem;    margin-right: 12rem;">Sign In</h1>
+      </div>
+  
+      <form [formGroup]="signUp" (ngSubmit)="onSubmit()">
+    <div class="col1">
+        <div class="mb-3">
+          <mat-form-field appearance='outline'>
+            <mat-label>Email</mat-label>
+            <input
+              matInput
+              class="form-control form-control-lg"
+              formControlName="email"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+  
+            <mat-error *ngIf="signUp.get('email').hasError('required') || signUp.get('email').hasError('email')">
+              Enter a valid email address
+            </mat-error>
+          </mat-form-field>
+        </div>
+    </div>
+   
+        <!-- <div class="googleauth"> <asl-google-signin-button  type='icon' size='large'></asl-google-signin-button></div> -->
+       
+          <div class=" button d-grid gap-2 mt-3">
+            <button type="submit" mat-raised-button color="primary" [disabled]="signUp.invalid">Sign In</button>
+          </div>
+        </form></div>
+        <!-- <div style="display: flex;color: black;font-weight: bold;  margin-left: 5rem;" ><hr><p style="padding-top: .4rem;"> Or </p><hr></div> -->
+
+        <!-- <div class="googleauth"> <asl-google-signin-button  type='icon' size='large'></asl-google-signin-button></div> -->
+        <div class="logInText text-center mb-3">
+          Don't have an account?<br> Ask your nearest Employee to Sign you Up
+        </div>
+    </div>
+    </div>
+      </mat-card-content>
+    </mat-card>

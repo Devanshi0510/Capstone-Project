@@ -1,0 +1,21 @@
+<div class="add-stud">
+    <h2 class="title">Delete Customer Detail</h2>
+    <form [formGroup]="addStud" (submit)="DeleteCustomerDetail(addStud)">
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input
+            matInput
+            placeholder="pat@example.com"
+            class="form-control"
+            formControlName="email"
+            required
+          />
+        </mat-form-field>
+      </p>
+      <div class="example-button-row">
+        <button mat-raised-button color="primary" class="button1" [disabled]="!addStud.valid">Submit</button>
+      </div>
+    </form>
+  </div>
+  

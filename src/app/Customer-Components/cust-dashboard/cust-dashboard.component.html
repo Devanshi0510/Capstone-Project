@@ -1,0 +1,98 @@
+
+<div class="cards">
+   <div class="second card">
+        <div class=" card-body">
+          <h1 class="retroshadow" style="margin-top: -4rem;
+          font-size: xxx-large;">INJURY STATUS</h1>
+          <!-- <p class="popout" style="margin-left:9rem ;margin-top: 0rem; font-size:4rem;" >
+            <span>S</span>
+            <span>T</span>
+            <span>A</span>
+            <span>T</span>
+            <span>U</span>
+            <span>S</span> 
+          </p> -->
+          <div class="card1">
+            <div style="display: flex; flex-direction: column;">
+              <div style="display: flex">
+            <h2>Current Status: </h2>
+            <p class="status {{data}}">{{data}}</p></div>
+            <div style="display: flex">
+            <h2>Help Status: </h2>
+            <p class="status1 ">{{help}}</p></div>
+          </div>
+            <h2>Edit Status:</h2>
+            <form>
+              <div class="form-group"><div style="display: flex; justify-content: center;">
+                <label for="status-dropdown" style="padding-top: 1rem;font-weight: bolder;">Select Status :</label>
+                <select id="status-dropdown" class="{{data}}">
+                  <option value="Completed">Completed</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Cancelled">Cancelled</option>
+                </select> </div>
+                <br>
+                <div  style="display: flex; justify-content: space-between;gap: 1rem;">
+                <button type="submit" (click)="UpdateStatus()">Update</button>
+                <br>
+                <button type="submit" (click)="DurationStatus()">Show Pending Duration</button>
+             </div> </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    <div class="first card"  routerLink="/cust-dash/injury-report">
+    <h1 class="deepshadow">INJURY REPORT</h1>
+        <!-- <div class="card-body">
+           <p class="popout">
+            <span>I</span>
+            <span>N</span>
+            <span>J</span>
+            <span>U</span>
+            <span>R</span>
+            <span>Y</span><br><br><br><br>
+            <span>R</span>
+            <span>E</span>
+            <span>P</span>
+            <span>O</span>
+            <span>R</span>
+            <span>T</span>
+            
+          </p>
+          <img class="injury" src="https://img.freepik.com/free-vector/illustrated-doctor-injecting-vaccine-patient_23-2148828856.jpg">
+        
+        </div> -->
+      </div>
+      <div>
+        <img class="img1" src="https://png.pngtree.com/background/20230517/original/pngtree-carousel-spinning-in-dark-blue-sky-over-a-dark-carnival-picture-image_2640697.jpg">
+      </div>
+     
+      <div class="forth card"  routerLink="">
+        <div class="card-body">
+          
+          <div class="verti" >
+            <h2 class="vert rotate">Account</h2>
+            <h2 class="vert">Detail</h2>
+          </div>
+        
+        </div>
+      </div>
+      <div class=" third card"  routerLink="/cust-dash/ride-details">
+        
+        <div class="card-body">
+          <div class="verti" >
+            <h2 class="vert rotate">Ride</h2>
+            <h2 class="vert">Detail</h2>
+          </div>
+        
+        </div>
+      </div>
+      <div class="fifth card" routerLink="">
+        <div class="card-body">
+          <div class="verti" >
+            <h2 class="vert rotate">Contact</h2>
+            <h2 class="vert">Detail</h2>
+          </div>
+        
+        </div>
+      </div>
+</div>

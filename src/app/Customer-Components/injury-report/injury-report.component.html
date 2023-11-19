@@ -1,0 +1,83 @@
+
+<div class="testbox">
+    <form [formGroup]="myForm" (ngSubmit)="submit()">
+      <div class="banner">
+        <h1 style="color: black;">Injury Report</h1>
+      </div>
+      <br />
+      <fieldset>
+        <legend>Patient Information</legend>
+        <div class="item">
+          <label for="fname"> Name<span>*</span></label>
+          <input id="fname" type="text" formControlName="name" class="form-control form-control-lg" required />
+        </div>
+        <div class="item">
+          <label for="phone">Phone Number<span>*</span></label>
+          <input id="phone" type="number" formControlName="phone" class="form-control form-control-lg" required />
+        </div>
+        <div class="item">
+          <label for="bdate">Birth Date <span>*</span></label>
+          <input id="bdate" type="date" formControlName="birthDate" class="form-control form-control-lg" required />
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Injury Information</legend>
+        <div class="item">
+          <label for="date">Date<span>*</span></label>
+          <input id="date" type="date" formControlName="injuryDate" class="form-control form-control-lg" required />
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+          <p>Time</p>
+          <select formControlName="time" class="form-control form-control-lg">
+            <option selected value="" disabled selected></option>
+            <option value="m">Morning</option>
+            <option value="a">Afternoon</option>
+            <option value="e">Evening</option>
+          </select>
+        </div>
+        <div class="question">
+          <label>Severity</label>
+          <div class="question-answer">
+            <div>
+              <input type="radio" value="Minor" id="radio_1" formControlName="severity" />
+              <label for="radio_1" class="radio"><span> Minor</span></label>
+            </div>
+            <div>
+              <input type="radio" value="Moderate" id="radio_3" formControlName="severity" />
+              <label for="radio_3" class="radio"><span>Moderate</span></label>
+            </div>
+            <div>
+              <input type="radio" value="Serious" id="radio_4" formControlName="severity" />
+              <label for="radio_4" class="radio"><span> Serious</span></label>
+            </div>
+  
+            <div>
+              <input type="radio" value="Critical" id="radio_5" formControlName="severity" />
+              <label for="radio_6" class="radio"><span>Critical</span></label>
+            </div>
+            <div>
+              <input type="radio" value="Unsurvivable" id="radio_6" formControlName="severity" />
+              <label for="radio_6" class="radio"><span>Unsurvivable</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <label for="instructions">Please describe the injury </label>
+          <textarea id="instructions" rows="3" formControlName="instructions" class="form-control form-control-lg"></textarea>
+        </div>
+        <div class="item">
+            <label for="location">Please describe the location </label>
+            <textarea id="location" rows="3" formControlName="location" class="form-control form-control-lg"></textarea>
+          </div>
+      </fieldset>
+      <button (click)="getLocation()">Send Location</button>
+      <div class="btn-block">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <app-org-footer></app-org-footer>

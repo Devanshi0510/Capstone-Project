@@ -1,0 +1,111 @@
+
+.mat-mdc-card-content:last-child {
+    // padding-bottom: 16px;
+    width: 57rem;
+    margin-right: 0rem;
+    margin-left: 2rem;
+}
+
+
+
+.mb-3 {
+   
+        margin-bottom: 0rem !important;
+    
+    margin-left: 1rem;
+}
+
+
+.mat-mdc-form-field {
+    width: 85%;
+}
+
+.mat-mdc-card {
+    position: relative;
+    margin-top: 2rem;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // margin-bottom: 5rem;
+}
+
+.h-100 {
+    height: 80% !important;
+}
+
+.button{
+    width: 31rem;
+    margin-left: 1rem;
+    height: 4rem;
+    font-size: 200;
+}
+.logInText{
+   margin-right:5rem;
+   font-size: small;
+   color: aliceblue;
+}
+
+.mat-mdc-card {
+  
+    background-image: url(https://i.pinimg.com/originals/c8/a3/22/c8a322cef359b31e07a772e33df1aefb.jpg);
+}
+.colorcheck{
+    background-color: #082C50;
+}
+
+.col1{
+    display: flex;
+}
+
+.signupCard{
+    display: flex;
+    justify-content: center;
+
+}
+
+img{
+    margin-top: 1rem;
+    width: 24rem;
+    height: 30rem;
+    // margin-left: 2rem;
+}
+
+.mat-mdc-raised-button[disabled][disabled] {
+    height: 3rem;
+    font-size: medium;
+    width: 25.5rem;
+}
+
+.mat-mdc-raised-button{
+    height: 3rem;
+    font-size: medium;
+    width: 25.5rem;
+}
+
+
+.googleauth{
+    text-align: right;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 12.5rem;
+}
+
+hr{
+    width: 5rem;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+    height: 4rem;
+    flex: auto;
+}
+::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 16px;
+    padding-bottom: 0px;
+}
+
+::ng-deep .mat-mdc-form-field .mat-mdc-floating-label.mdc-floating-label {
+
+    font-size: small;
+}
+
+mat-error{
+    font-size: xx-small;
+}

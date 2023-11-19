@@ -1,0 +1,71 @@
+
+table {
+    width: 100%;
+  }
+  .example-button-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .View, .Edit, .Delete {
+    padding: 0.5rem;
+    font-size: smaller;
+  }
+
+  .Delete{
+    margin-right:2.5rem;
+  }
+  .Idshift{
+    padding-left: 4rem;
+  }
+
+//   .table1{
+// background-color: #e6e6e6;
+
+//   }
+  .table-container {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  th, td {
+    font-size: small;
+    padding: 0.5rem;
+  }
+
+
+  .spinner{
+  margin-left: 25rem;
+  }
+  .mat-elevation-z8{
+    
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-left: 5rem;
+    
+}
+.card{
+    background-color: #343a40;
+    color: #fff;
+    height: 8rem;
+}
+
+h2{
+    padding-left: 2.5rem;
+    padding-top: 2rem;
+
+}
+
+.card[_ngcontent-ng-c1011942700] {
+
+  box-shadow: 10px 10px 10px #808287;
+}
+
+// ::ng deep .content {
+//     background-color: red;
+// }

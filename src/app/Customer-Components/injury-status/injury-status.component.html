@@ -1,0 +1,93 @@
+<!-- <h1>Current Status</h1>
+  <p >{{data}}</p>
+  
+  <h2>Edit Status</h2>
+  <select id="status-dropdown">
+    <option value="Completed">Completed</option>
+    <option value="Pending">Pending</option>
+    <option value="Cancelled">Cancelled</option>
+  </select>
+  <button (click)="UpdateStatus()">Update Status</button> -->
+
+<div class="bag-img">
+    <div id="mainNavigation">
+        <nav role="navigation">
+          <!-- <div class="py-3 text-center border-bottom">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCbHooxn_RvAkNqseZ4JlCIA_w0loCjwR2VS2cNF9snEmjlRrR8Sxoaf1DzAYIkHjmf8s&usqp=CAU" alt="" class="invert">
+          </div> -->
+        </nav>
+        <div class="navbar-expand-md border-bottom">
+          <div class="navbar-dark text-center my-2">
+            <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
+            </button>
+          </div>
+          <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Contact us</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <section class="split">
+    <div class="image"></div>
+    <div class="content">
+      
+    </div>
+  </section>
+
+  <div class="card1">
+    <div style="display: flex;">
+    <h2>Current Status: </h2>
+    <p class="status {{data}}">{{data}}</p>
+    <h2>Help Status: </h2>
+    <p class="status {{help}}">{{help}}</p>
+  </div>
+    <h2>Edit Status</h2>
+    <form>
+      <div class="form-group">
+        <label for="status-dropdown">Select Status</label>
+        <select id="status-dropdown" class="{{data}}">
+          <option value="Completed">Completed</option>
+          <option value="Pending">Pending</option>
+          <option value="Cancelled">Cancelled</option>
+         
+        </select> 
+        <label for="status-dropdown1">Select Help Status</label>
+        <select id="status-dropdown1" class="{{data}}">
+          <option value="Completed">Needed</option>
+          <option value="Pending">On the way</option>
+          <option value="Cancelled">Reached</option>
+         
+        </select> 
+        <br>
+        <button type="submit" (click)="UpdateStatus()">Update</button>
+        <br>
+        <button type="submit" (click)="DurationStatus()">Show Pending Duration</button>
+      </div>
+    </form>
+  </div>

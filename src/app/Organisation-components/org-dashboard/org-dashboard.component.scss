@@ -1,0 +1,105 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .bag-img {
+    background-image: url("https://live.staticflickr.com/1849/44768199531_b0d180042d_b.jpg");
+    background-size: cover;
+    position: relative;
+    height:35rem; /* adjust to your needs */
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  @mixin side{
+    float: right;
+    font-size: large;
+  
+  }
+
+ .left1{
+  @include side();
+  padding-left: 2rem;
+
+ } 
+ .left2{
+  @include side();
+  margin-left: 40rem;
+ } 
+.visit{
+  @include side();
+}
+ img{
+  width: 4rem;
+  height: 4rem;
+ }
+
+ 
+img:hover {
+  transform: scale(1.5); 
+}
+
+#mainNavigation a {
+    font-family: 'Cabin', sans-serif;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    text-shadow:1px 1px 2px rgba(0,0,0,0.4)
+  }
+  
+  .dropdown-menu {
+    background:#03727d
+  }
+  a.dropdown-toggle {
+    color:#dfdfdf !important
+  }
+  a.dropdown-item:hover {
+    color:#03727d !important
+  }
+  .nav-item a{
+    color:#dfdfdf;
+  }
+  .nav-item a:hover {
+    color:#fff
+  }
+  .nav-item{
+    min-width:12vw;
+  }
+  #mainNavigation {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:123;
+    padding-bottom:120px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+  #navbarNavDropdown.collapsing .navbar-nav,
+  #navbarNavDropdown.show .navbar-nav{
+    background:#037582;
+    padding:12px;
+  }
+
+  h1{
+    position: absolute;
+    text-align: center;
+    margin-left: 15rem;
+    // max-width:900px;
+    font-size: 50px;
+    top: 18rem;
+    color: aliceblue;
+    font-weight: bolder;
+    font-family: 'Baskerville', serif;
+    // margin-top: 5rem;
+  }
+
+ 
